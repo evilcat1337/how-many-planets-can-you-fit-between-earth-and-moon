@@ -22,7 +22,7 @@ var Body = React.createClass({
         var styles = {
             width: bodyData.size_percent + '%',
             paddingBottom: bodyData.size_percent + '%',
-            backgroundImage: 'url(/images/' + type + '.svg)'
+            backgroundImage: 'url(images/' + type + '.svg)'
         };
 
         return (
