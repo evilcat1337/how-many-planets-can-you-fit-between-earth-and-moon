@@ -1,0 +1,60 @@
+.planet-btn {
+    display: block;
+    font-size: .8rem;
+    padding: 0.25rem 1rem;
+    width: 100%;
+
+    &:hover {
+        .planet-name {
+            border-right: 1px solid #000;
+        }
+    }
+
+    &.active {
+        .button-state {
+            -webkit-transform: rotate(45deg);
+               -moz-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                    transform: rotate(45deg);
+        }
+
+        .planet-name {
+            border-right: 1px solid #000;
+        }
+    }
+
+    &.disabled {
+        .button-state {
+            -webkit-transform: rotate(45deg);
+               -moz-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                    transform: rotate(45deg);
+        }
+    }
+
+    &[disabled] {
+        &:hover {
+            .planet-name {
+                border-right: 1px solid #fff;
+            }
+        }
+    }
+}
+
+.button-state {
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 24px;
+
+    -webkit-transition: -webkit-transform .3s;
+       -moz-transition: -moz-transform .3s;
+        -ms-transition: -ms-transform .3s;
+            transition: transform .3s;
+}
+
+.planet-name {
+    border-right: 1px solid #fff;
+    margin-right: .5rem;
+    padding-right: .5rem;
+}

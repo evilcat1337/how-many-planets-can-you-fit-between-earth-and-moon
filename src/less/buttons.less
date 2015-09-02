@@ -1,0 +1,32 @@
+button,
+.btn {
+    background: #000;
+    border: 1px solid #000;
+    color: #fff;
+    font-family: @headingFontFamily;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+
+    &:hover {
+        background: #fff;
+        color: #000;
+        text-decoration: none;
+    }
+
+    &.active {
+        background: #fff;
+        color: #000;
+    }
+
+    &[disabled] {
+        background: #999;
+        border: 1px solid #999;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+}

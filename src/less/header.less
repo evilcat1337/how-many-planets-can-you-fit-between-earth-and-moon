@@ -1,0 +1,93 @@
+.page-header {
+    margin-top: 10%;
+    text-align: center;
+
+    h1 {
+        font-size: 52px;
+        font-weight: 400;
+        letter-spacing: 3px;
+        line-height: 1;
+        text-transform: uppercase;
+        max-width: 720px;
+        margin: 1.5rem auto;
+
+        span {
+            display: block;
+
+            &:first-child {
+                font-size: 24px;
+                letter-spacing: 16px;
+                text-indent: 5px;
+            }
+
+            &:nth-child(2) {
+                font-weight: 700;
+                letter-spacing: 6px;
+                line-height: 1.2;
+            }
+
+            &:last-child {
+                font-size: 15px;
+                letter-spacing: 5px;
+            }
+        }
+    }
+}
+
+.subheading {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    margin: 10% 0 10%;
+}
+
+@media (min-width: 600px) {
+
+    .page-header {
+
+        h1 {
+            font-size: 105px;
+
+            span {
+                &:first-child {
+                    font-size: 42px;
+                    letter-spacing: 34px;
+                    text-indent: 9px;
+                }
+
+                &:nth-child(2) {
+                    letter-spacing: 6px;
+                    line-height: 1.2;
+                }
+
+                &:last-child {
+                    font-size: 16px;
+                    letter-spacing: 5px;
+                }
+            }
+        }
+    }
+
+    .subheading {
+        margin: 10% 0 5%;
+    }
+
+}
+
+@media (min-width: 720px) {
+
+    .page-header {
+
+        h1 {
+
+            span {
+                &:first-child {
+                    font-size: 48px;
+                    letter-spacing: 33px;
+                    text-indent: 28px;
+                }
+            }
+        }
+    }
+
+}
+

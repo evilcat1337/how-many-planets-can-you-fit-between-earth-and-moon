@@ -1,0 +1,30 @@
+@rulerColor: #000;
+@rulerEdgesHeight: 24px;
+
+.ruler {
+    border-top: 1px solid @rulerColor;
+    bottom: 2rem;
+    font-size: .8rem;
+    padding-top: .5rem;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+
+    &:before,
+    &:after {
+        background: @rulerColor;
+        content: '';
+        width: 1px;
+        height: @rulerEdgesHeight;
+        position: absolute;
+        top: -@rulerEdgesHeight / 2;
+    }
+
+    &:before {
+        left: 0;
+    }
+
+    &:after {
+        right: 0;
+    }
+}
